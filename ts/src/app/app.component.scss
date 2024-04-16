@@ -252,30 +252,36 @@ header {
 
 /*inicio-pg*/
   .page-content{
-    display: block;
-    padding-right: 45px;
-    padding-left: 45px;
+  display: block;
+  padding-right: 45px;
+  padding-left: 45px;
   }
+
   #content-title{
     display: inline-flex;
     width: 100%;
     padding-top: 25px;
   }
-  .titulo-inicio{
+
+  .work-title{
     width: 80%;
   }
-  .work-title h2{
+  .work-title > h2{
     height: 54px;
     width: 90%;
     font-family: 'roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 25px;
-    line-height: 16px;
+    font-size: 20px;
     color: #ed7839;
   }
 
+  #work-interation{
+    width: 30%;
+    text-align: right;
+  }
 
+ 
 
 
 
