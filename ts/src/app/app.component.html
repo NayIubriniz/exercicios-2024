@@ -152,61 +152,92 @@
                 <p> Voluptatem, dignissimos quibusdam.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, incidunt ad officia hic quos vel quam modi doloribus placeat dignissimos sit alias ex nam esse. Pariatur corrupti facere natus tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod facere temporibus, sequi harum mollitia modi, eveniet ducimus qui corrupti cupiditate obcaecati? Dolore dolorem magnam temporibus corporis necessitatibus quasi ad?</p></span></p>
           </div>
         </div>
-        <!--Sessão-->
+        
+        <!--DISCUSSÕES-->
         <div class="speech-container">
           <div class="header-speech">
-            <p>Discussão</p>
+            <p>Discussões</p>
           </div>
           <div class="all-content-abstract">
-        <!--area-compartilhamento-->
-            <div id="sharing-session">
-              <p>
-                Compartilhe suas ideias ou dúvidas com os autores!
-              </p>
-              <div class="sharing-icons">
-                <div class="icon-1">
-                  <img src="../assets/sharing-icon-1.png" alt="">   </div>
-                  <div class="icon-2">
-                    <img src="../assets/sharing-icon-2.png" alt="">
-                  </div>
-                  <div class="icon-3">
-                    <img src="../assets/sharing-icon-3.png" alt="">
-                  </div>
+            <!--iniSessão-->
+            <div class="sharing-session">
+            <p>compartilhe suas ideias suas ideias ou dúvidas com os autores</p>
+            <div class="sharing-icons">
+              <div id="sharing-icon-1">
+                <img src="../assets/sharing-icon-1.png" alt="">
               </div>
-              <div class="ask-thutor">
-                <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a cursiosidade? Deixe seus questionamentos ou sugestões para o autor!
-                </p>
+              <div id="sharing-icon-2">
+                <img src="../assets/sharing-icon-2.png" alt="">
               </div>
-              <div class="btn-box">
-                <button type="button" onclick="criarTopico()">
-                  <img src="../assets/create-topic-icon.svg" alt="botão criar tópico">
-                </button>
+              <div id="sharing-icon-3">
+                <img src="../assets/sharing-icon-3.png" alt="">
               </div>
             </div>
-            <!--Area-Form-->
-            <div id="form-message">
-              <p>Tem alguma dúvida ou sugestão? Compartilhe seu feedback com os autores
-              </p>
-              <label>Assunto</label>
-              <input disabled="" type="text" id="msg" placeholder="Defina um tópico sucinto para notificar os autores...">
-              <label>Conteúdo</label>
-              <div id="message-content"></div>
-              <div class="icon-btn-form">
-                <div class="icon-form">
-                  <div id="shape-1"></div>
-                  <div id="shape-2"></div>
+            <div class="ask-author">
+              <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+            </div>
+            <div class="btn-box">
+              <button type="button" onclick="createTopic()">
+              <img src="../assets/create-topic-icon.svg" alt="botão criar tópico"> Criar tópico
+              </button>
+            </div>
+            </div>
+            <!--FORMULÁRIO-->
+              <div id="form-message">
+                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                <label>Assunto</label>
+                <input disabled type="text" id="message-subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+                <label>Conteúdo</label>
+                <div id="message-content"></div>
+                <div class="icon-btn-form">
+                  <div class="icon-form">
+                    <div id="shape-1"></div>
+                    <div id="shape-2"></div>
+                  </div>
+                  <div class="btn-form">
+                    <button onclick="sendPost()">Enviar</button>
+                  </div>
                 </div>
-                <div class="btn-form">
-                  <button onclick="sendPost()">Enviar</button>
+                <hr>
+              </div>
+              <!--Enviado-->
+              <div id="confirm-shopping">
+                <div class="confirm-text">
+                  <p>Seu tópico foi enviado com sucesso!</p>
+                </div>
+
+                <div class="thanks-text">
+                  <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                </div>
+
+                <div class="discovery-jobs">
+                  <p>Descubra outros trabalhos!</p>
+                </div>
+
+                <div class="new-topic">
+                  <button type="button" onclick="createTopic()">
+                  Criar novo tópico
+                  </button>
+                </div>
+
+                <div class="confirm-shipping-line"></div>
+
+                <!--Espera de feedback-->
+                <div class="wait-author">
+                  <div class="post">
+                    <p id="subject-question">Assunto de pergunta aparece aqui</p>
+                    <p id="name">Carlos Henrique Santos</p>
+                    <p id="post-content">
+                      Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                    </p>
+                  </div>
                 </div>
               </div>
-              <hr>
-            </div>
-            
+          </div>
+        </div>
+
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </body>
 </html>

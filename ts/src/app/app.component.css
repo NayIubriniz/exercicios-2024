@@ -529,6 +529,7 @@ header {
 .abstract-content strong {
   color: #ed7839;
   font-size: larger;
+  font-family: "Quicksand";
 }
 
 .speech-container {
@@ -567,11 +568,11 @@ header {
 }
 
 /*Compartilhamento*/
-#sharing-session {
+.sharing-session {
   display: block;
 }
 
-#sharing-session p {
+.sharing-session p {
   font-family: "roboto";
   font-style: normal;
   font-weight: 700;
@@ -589,19 +590,19 @@ header {
   margin-top: 1.6875rem;
 }
 
-#icon-2 {
+#sharing-icon-2 {
   padding-left: 3.2338rem;
   padding-right: 3.2338rem;
 }
 
-#sharing-session .ask-author p {
+.ask-author > p {
   font-family: "Quicksand";
+  color: #595959;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 19px;
   text-align: center;
-  color: #595959;
   width: 39.125rem;
   height: 2.4375rem;
   margin: auto;
@@ -672,5 +673,428 @@ header {
   padding-left: 1.4456rem;
   padding-top: auto;
   padding-bottom: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
+}
+
+#message-subject::-moz-placeholder {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #4d4d4d;
+}
+
+#message-subject::placeholder {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 18px;
+  color: #4d4d4d;
+}
+
+#message-btn-form {
+  position: relative;
+  width: 100%;
+  height: 1.9375rem;
+  background: #eaf1f2;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 0 0 4px 4px;
+  display: flexbox;
+}
+
+.icon-form {
+  position: absolute;
+  display: flex;
+  left: 1.8313rem;
+  top: 0.625rem;
+}
+
+/*
+#shape-1{
+}
+*/
+/*
+#shape-2
+*/
+.btn-form {
+  position: absolute;
+  width: 13.4375rem;
+  height: 1.9375rem;
+  right: -0.0625rem;
+  top: -0.0625rem;
+}
+
+.btn-form button {
+  background: linear-gradient(180deg, #feb154 0%, #f1833e 100%);
+  border-radius: 0px 0px 4px 0px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  justify-content: end;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+#form-message hr {
+  margin-top: 15px;
+  border: 1px solid #e7e7e7;
+}
+
+/*Enviado*/
+#confirm-shipping {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.confirm-text p {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  text-align: center;
+  color: #ed7839;
+  margin-top: 0.9375rem;
+}
+
+.thanks-text p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  text-align: center;
+  color: #595959;
+  margin-top: 1.125rem;
+}
+
+.descobrir p {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 137.5%;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #f48f44;
+  margin-top: 1.8125rem;
+}
+
+.new-topic {
+  width: 14.6969rem;
+  height: 32px;
+  margin: auto;
+  margin-top: 2.9375rem;
+}
+
+.new-topic button {
+  border: none;
+  width: 14.6969rem;
+  height: 2rem;
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.confirm-shipping-line {
+  border-bottom: 1px solid #e7e7e7;
+  margin-top: -1rem;
+}
+
+/*Feedback*/
+.espera-author {
+  position: relative;
+  width: 100%;
+  height: 9.5rem;
+  margin-top: 1.75rem;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+  border-radius: 0.25rem;
+}
+
+.post {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#subject-question, #subject-question-model {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16rem;
+  line-height: 1.25rem;
+  color: #ed7839;
+  padding: 17px 24.17px 0 24.17px;
+  margin-bottom: 0px;
+}
+
+#name,
+#name-model {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  color: #5c5c5c;
+  margin-bottom: 0px;
+  padding-inline-start: 1.5106rem;
+}
+
+#post-content,
+#post-content-model {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 400;
+  color: #4d4d4d;
+  margin-top: 0.625rem;
+  margin-bottom: 0px;
+  padding-left: 1.5106rem;
+  padding-right: 1.5106rem;
+}
+
+.return,
+.return-model {
+  margin-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 24.17px;
+}
+
+/*FILTRAR*/
+.post-cover {
+  position: absolute;
+  display: block;
+  width: 100.2%;
+  height: 103%;
+  background: rgba(247, 245, 245, 0.7137254902);
+  border: 0.0625rem solid #e7e7e7;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  top: -0.0625rem;
+  left: -0.0625rem;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.post-cover img {
+  width: 1.9325rem;
+  height: 1.4512rem;
+  margin-top: 2.1875rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wait-feedback {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #707070;
+  text-align: center;
+  margin-top: 7.78px;
+  margin-bottom: 0px;
+}
+
+#edit-topic {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #ed7839;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+/* Modelos de posts */
+.post-model,
+.post-model-comments {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  margin-top: 15px;
+  max-height: 775px;
+  padding-bottom: 18px;
+}
+
+/* Post com comentários */
+#hidden-comments {
+  width: 100.15%;
+  margin-left: -1px;
+  display: none;
+}
+
+.return-comments {
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 24.17px;
+  width: 100%;
+}
+
+.spots {
+  display: block;
+  margin-top: 1px;
+}
+
+.score {
+  width: 4px;
+  height: 4px;
+  background-image: url("/img/score.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 7px;
+}
+
+.btn-enjoy {
+  width: 27.03px;
+  height: 19px;
+  position: relative;
+  margin-top: -4px;
+  margin-left: 15.01px;
+}
+
+.box-heart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.heart {
+  position: absolute;
+  width: 14.01px;
+  height: 14px;
+  background-image: url("/img/heart.svg");
+  background-repeat: no-repeat;
+  top: 9.3px;
+  left: 9.5px;
+}
+
+.likes p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #aaa5a5;
+  margin-left: 15.01px;
+  cursor: pointer;
+}
+
+.answers p {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #aaa5a5;
+  margin-left: 15.01px;
+  cursor: pointer;
+}
+
+.answers p:hover {
+  color: #aaa5a5;
+  text-decoration: underline;
+}
+
+.contribution {
+  background: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  border-radius: 0px;
+  padding: 18px 23.19px;
+  max-height: 300px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.contribution-empty {
+  padding: 18px 23.19px;
+  padding-right: 92px;
+}
+
+.comments-header {
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+
+.comments-author {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5c5c5c;
+}
+
+.who {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ed7839;
+}
+
+.the-end-header {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.positive {
+  width: 30.92px;
+  height: 23.22px;
+  background-image: url("/img/orang-right.svg");
+  background-repeat: no-repeat;
+  margin-left: 33.07px;
+}
+
+.comment-content {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4d4d4d;
+  padding-right: 92px;
+}
+
+/* Footer */
+footer {
+  margin-left: 265px;
+}
+
+footer img {
+  width: 100%;
 }/*# sourceMappingURL=app.component.css.map */
