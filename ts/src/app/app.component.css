@@ -978,7 +978,7 @@ header {
 .score {
   width: 4px;
   height: 4px;
-  background-image: url("/img/score.svg");
+  background-image: url("../assets/score.svg");
   background-repeat: no-repeat;
   padding-bottom: 7px;
 }
@@ -1001,10 +1001,13 @@ header {
   position: absolute;
   width: 14.01px;
   height: 14px;
-  background-image: url("/img/heart.svg");
+  background-image: url("../assets/coracao.svg");
   background-repeat: no-repeat;
   top: 9.3px;
   left: 9.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .likes p {
