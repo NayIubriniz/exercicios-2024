@@ -589,7 +589,7 @@ header{
   /*area Formulário*/
   #form-message{
     margin: 15px;
-    display: none; 
+    display: block; 
   }
   #form-message p{
     font-family: 'Quicksand';
@@ -601,7 +601,7 @@ header{
     color: #5c5c5c;
     padding-top: 0px;
   }
-  #font-message label{
+  #form-message label{
     font-family: 'roboto';
     font-style: normal;
     font-weight: 700;
@@ -632,7 +632,13 @@ header{
     line-height: 18px;
     color: #4d4d4d;
   }
-  #message-btn-form{
+  #message-content{
+    height: 82px;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: -1px;
+    border: 1px solid #cccccc;
+  }
+  .icon-btn-form{
     position: relative;
     width: 100%;
     height: 1.9375rem;
@@ -647,7 +653,6 @@ header{
     display: flex;
     left: 1.8313rem;
     top: 0.625rem;
-    
   }
   
   #shape-1{
@@ -1037,7 +1042,7 @@ footer {
   width: 1000px; 
   margin: 0 auto;
   margin-left: 255px;
-  position: fixed;
+  
   bottom: 0;
 }
 

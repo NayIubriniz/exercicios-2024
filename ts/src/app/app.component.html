@@ -137,7 +137,7 @@
           <div class="abstract-head">
             <p>Resumo</p>
           </div>
-          <div class="abstract-content" onclick="showContent()">
+          <div class="abstract-content">
             <p class="resumo">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida.
                Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet.
@@ -177,29 +177,31 @@
               <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
             </div>
             <div class="btn-box">
-              <button class="btn-topic" type="button" onclick="createTopic()">
+              <button class="btn-topic" type="button">
               <img src="../assets/create-topic-icon.svg" alt="botão criar tópico"> criar tópico
               </button>
             </div>
             </div>
             <!--FORMULÁRIO-->
-              <div id="form-message">
-                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-                <label>Assunto</label>
-                <input disabled type="text" id="message-subject" placeholder="Defina um tópico sucinto para notificar os autores...">
-                <label>Conteúdo</label>
-                <div id="message-content"></div>
-                <div class="icon-btn-form">
-                  <div class="icon-form">
-                    <div id="shape-1"></div>
-                    <div id="shape-2"></div>
+              <form action="#">
+                <div id="form-message">
+                  <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                  <label>Assunto</label>
+                  <input type="text" id="message-subject" placeholder="Defina um tópico sucinto para notificar os autores..." class="subject">
+                  <label>Conteúdo</label>
+                  <div id="message-content"></div>
+                  <div class="icon-btn-form">
+                    <div class="icon-form">
+                      <div id="shape-1"></div>
+                      <div id="shape-2"></div>
+                    </div>
+                    <div class="btn-form">
+                      <button>Enviar</button>
+                    </div>
                   </div>
-                  <div class="btn-form">
-                    <button onclick="sendPost()">Enviar</button>
-                  </div>
+                  <hr>
                 </div>
-                <hr>
-              </div>
+              </form>
               <!--Enviado-->
               <div id="confirm-shipping">
                 <div class="confirm-text">
@@ -215,7 +217,7 @@
                 </div>
 
                 <div class="new-topic">
-                  <button type="button" onclick="createTopic()">
+                  <button type="button">
                   criar novo tópico
                   </button>
                 </div>
@@ -223,9 +225,9 @@
                 <div class="confirm-shipping-line"></div>
 
                 <!--Espera de feedback-->
-                <div class="espera-author">
-                  <div class="post">
-                    <p id="question">Assunto da pergunta aparece aqui</p>
+                <div class="espera-author answered-topic">
+                  <div class="post" class="ops-topic-subject" >
+                    <h4 id="question">Assunto da pergunta aparece aqui</h4>
                     <p id="name">Carlos Henrique Santos</p>
                     <p id="post-content">
                       Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
@@ -258,7 +260,7 @@
                </div>  
                
                <div class="post-model-comments">
-                <p id="subject-question-model">Assunto da pergunta aparece aqui</p>
+                <h4 id="subject-question-model">Assunto da pergunta aparece aqui</h4>
                 <p id="name-model">
                   Carlos Henrique Santos
                 </p>
@@ -283,10 +285,10 @@
                   </div>
 
                   <div class="answers">
-                    <p onclick="showComments()">4 respostas</p>
+                    <p>4 respostas</p>
                   </div>
                 </div>
-                <div id="hidden-comments">
+                <div class="comments-container"  id="hidden-comments" >
                   <div class="contribution">
                     <div class="comments-header">
                       <p class="comments-author">
@@ -342,7 +344,7 @@
                         <div class="positive"></div>
                       </div>
                     </div>
-                    <div class="comment-content">
+                    <div class="comment-content ">
                       <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                     </div>
                   </div>
@@ -351,14 +353,13 @@
           </div>
         </div>
         </div>
+
+
+        
       </section>
     
     
-        <footer>
-          <img src="../assets/footer-imagem.svg" alt="Galoá">
-        </footer>
+       
       
-
-    <script src="./app.js"></script>
 </body>
 </html>
