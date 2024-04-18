@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>13 SLACA</title>
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -91,7 +86,7 @@
             <div id="login">
               <div class="login-texts">
                 <div id="greetings"><p>Bem vindo!</p></div>
-                <div id="email"><p>alguem12@galoascience.com</p></div>
+                <div id="email"><p>pessoa22@galoatec.com</p></div>
               </div>
               <div class="login-images">
                 <div id="profile-image"></div>
@@ -167,8 +162,8 @@
             <div class="abstract-head">
               <p>Resumo</p>
             </div>
-            <div class="abstract-content" onclick="showContent()">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. <br><br>Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum voluptatibus illum tempora dolor labore amet pariatur animi incidunt autem quo earum repudiandae ipsum, nesciunt neque facilis saepe. Porro, tempora, eius temporibus, hic! <span id="hideText">... <strong>ver mais</strong> </span>
+            <div class="abstract-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. <br><br>Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum voluptatibus illum tempora dolor labore amet pariatur animi incidunt autem quo earum repudiandae ipsum, nesciunt neque facilis saepe. Porro, tempora, eius temporibus, hic! <span id="hideText">... <strong><a href="#" class="btn-show-more">ver mais</a></strong> </span>
               <span id="showText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla dolor iure eveniet harum neque itaque aliquam alias animi officiis impedit sit, doloremque quos praesentium labore deserunt repellendus sunt vitae.<br><br>L orem ipsum dolor sit amet consectetur adipisicing elit. Nam, eos esse, atque modi quos voluptates nobis amet blanditiis deleniti est maxime! Velit placeat iusto eveniet consequuntur, esse officiis fuga excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore numquam magnam adipisci explicabo rerum doloremque tempora, eius temporibus, ipsa ratione architecto quidem exercitationem rem aliquam, perspiciatis itaque. Voluptatem, dignissimos quibusdam.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, incidunt ad officia hic quos vel quam modi doloribus placeat dignissimos sit alias ex nam esse. Pariatur corrupti facere natus tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod facere temporibus, sequi harum mollitia modi, eveniet ducimus qui corrupti cupiditate obcaecati? Dolore dolorem magnam temporibus corporis necessitatibus quasi ad?</span></p>
               
                 
@@ -192,27 +187,29 @@
                   <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                 </div>
                 <div class="btn-box">
-                  <button type="button" onclick="createTopic()"><img src="../assets/create-topic-icon.svg" alt="Botão de criar tópico"/> criar tópico</button>
+                  <a type="button" class="btn-create-topic"><img src="../assets/create-topic-icon.svg" alt="Botão de criar tópico"/> criar tópico</a>
                 </div>
               </div>
               <!-- Formulário -->
-              <div id="form-message">
-                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-                <label>Assunto</label>
-                <input disabled type="text" id="message-subject" placeholder="Defina um tópico sucinto para notificar os autores..."/>
-                <label>Conteúdo</label>
-                <div id="message-content"></div>
-                <div class="icon-btn-form">
-                  <div class="icon-form">
-                    <div id="shape-1"></div>
-                    <div id="shape-2"></div>
+              <form action="/">
+                <div id="form-message">
+                  <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                  <label>Assunto</label>
+                  <input class="subject" type="text" id="message-subject" placeholder="Defina um tópico sucinto para notificar os autores..."/>
+                  <label>Conteúdo</label>
+                  <input id="message-content">
+                  <div class="icon-btn-form">
+                    <div class="icon-form">
+                      <div id="shape-1"></div>
+                      <div id="shape-2"></div>
+                    </div>
+                    <div class="btn-form">
+                      <button>Enviar</button>
+                    </div>
                   </div>
-                  <div class="btn-form">
-                    <button onclick="sendPost()">Enviar</button>
-                  </div>
+                  <hr>
                 </div>
-                <hr>
-              </div>
+               </form>
               <!-- Tôpico enviado -->
               <div id="confirm-shipping">
                 <div class="confirm-text">
@@ -225,15 +222,15 @@
                   <p>Descubra outros trabalhos!</p>
                 </div>
                 <div class="new-topic">
-                  <button type="button" onclick="createTopic() ">criar novo tópico</button>
+                  <a type="button">criar novo tópico</a>
                 </div>
                 <div class="confirm-shipping-line"></div>
                 <!-- Espera de feedback -->
-                <div class="wait-author">
-                  <div class="post">
+                <div class="wait-author answered-topic">
+                  <div class="post ops-topic-subject">
                     <p id="subject-question">Assunto da pergunta aparece aqui</p>
                     <p id="name">Carlos Henrique Santos</p>
-                    <p id="post-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                    <p id="post-content" class="comments-container">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
                     <div class="return">
                       <img src="../assets/card-footer-post.svg" alt="Card footer post"/>
                     </div>
@@ -274,7 +271,7 @@
                     <p>4 likes</p>
                   </div>
                   <div class="answers">
-                    <p onclick="showComments()">4 respostas</p>
+                    <p>4 respostas</p>
                   </div>
                 </div>
                 <div id="hidden-comments">
@@ -290,7 +287,6 @@
                       <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
                     </div>
                   </div>
-
                   <div class="contribution-empty">
                     <div class="comments-header">
                       <p class="comments-author">Carlos Henrique Santos</p>
