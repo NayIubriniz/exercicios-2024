@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 
-.all{
+section.all{
   max-width: 100%;
   height: 100vh;
+  box-sizing: border-box;
   padding: 0;
   background: #fff;
   display: inline-flex;
@@ -495,7 +496,7 @@ header{
   }
   .speech-container{
     width: 100%;
-    height: 1200px;
+    height: 1450px;
     margin-top: 1.875rem;
     border: 1px solid #ececec;
     box-sizing: border-box;
@@ -1034,18 +1035,19 @@ header{
   font-size: 14px;
   line-height: 18px;
   color: #4d4d4d;
-  padding-right: 92px;
+  padding-right: 5.75rem;
 }
 
 /* Footer */
+
 footer {
-  width: 1000px; 
-  margin: 0 auto;
-  margin-left: 255px;
+  margin-left: 16.5625rem;
+  display: flex;
   
-  bottom: 0;
+  justify-content: start;
 }
 
 footer img {
   width: 100%;
+  margin-top: 101.25rem;
 }
